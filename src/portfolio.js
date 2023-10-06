@@ -82,6 +82,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     },
     {
+      skillName: "angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },    
+    {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
@@ -109,10 +113,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -123,24 +123,18 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
+      schoolName: "University of Science and Technology of China,",
+      logo: require("./assets/images/1519922087308.jpg"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      duration: "Sep 2011 – Aug 2015",
+      desc: "Participated in the research of Finger Vein recognition system and published 3 papers.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Finger vein recognitino based on POC",
+        "Motion detection",
+        "Feature extraction method from Finger vein"
       ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+
   ]
 };
 
@@ -158,9 +152,14 @@ const techStack = {
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
+      Stack: "Mobile development",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Artificial Inteligence",
+      progressPercentage: "80%"
     }
+
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -171,29 +170,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      role: "Full Stack developer",
+      company: "Boost Insider",
+      companylogo: require("./assets/images/1563402136324.jpg"),
+      date: "Mar 2023 – Present",
+      desc: "I am working as Full Stack developer.",
+    },    
+    {
+      role: "Full Stack developer",
+      company: "Upwork.com",
+      companylogo: require("./assets/images/1620158724382.jpg"),
       date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "I am working as web and mobile developer.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Web development",
+        "Mobile development"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full Stack developer",
+      company: "Freelancer.com",
+      companylogo: require("./assets/images/1519897752927.jpg"),
+      date: "Apr 2017 – Present",
+      desc: "I have actively contributed to multiple freelance projects encompassing web development, mobile app development, and artificial intelligence integration. These diverse experiences have honed my skills and expertise in delivering top-notch solutions across a range of domains."
     }
   ]
 };
@@ -213,26 +212,31 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Screenshot_11.png"),
+      projectName: "Imagegination art",
+      projectDesc: "Frontend React, Backend Flask",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://imaigination.art/home"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/pandoraai.webp"),
+      projectName: "Pandora ai",
+      projectDesc: "Your all-in-one AI-Powered Creative Hub! Explore endless possibilities by transforming text, photos, and doodles into stunning digital artworks, avatars, and animations. Unleash your imagination and dive into the world of AI-generated art, where every idea comes to life in an instant",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Android",
+          url: "https://play.google.com/store/apps/details?id=io.socialbook.cartoonizer&hl=en_US&gl=US"
+        },
+        {
+          name: "iOS",
+          url: "https://apps.apple.com/us/app/pandora-ai-ai-art-photo-edit/id1604123460"
         }
+
       ]
     }
   ],
@@ -297,7 +301,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -321,7 +325,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -340,7 +344,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -353,7 +357,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
